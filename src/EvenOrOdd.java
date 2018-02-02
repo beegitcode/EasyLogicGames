@@ -8,7 +8,6 @@ public class EvenOrOdd {
 		Scanner input = new Scanner(System.in);
 		Random random = new Random();
 
-		int userNumber;
 		int evenOrOddNumber;
 		boolean userAnswer;
 
@@ -16,7 +15,7 @@ public class EvenOrOdd {
 			evenOrOddNumber = random.nextInt(100);
 
 			System.out.println("Czy podana liczba jest parzysta? " + evenOrOddNumber);
-				
+
 			System.out.printf("Prawda znaczy true, fa³sz znaczy false. \ntrue czy false???\n");
 
 			userAnswer = input.nextBoolean();
@@ -28,10 +27,10 @@ public class EvenOrOdd {
 				System.out.println("Niestety :( odpowiedz niepoprawna.");
 			}
 			System.out.printf("Koniec wciœnij 0. \nKontynuacja wprowadz 1.\n");
-			
-		} while (input.nextInt() != GuessLetter.EXIT);
-		System.out.println(GuessLetter.END_THANKS);
-		
+
+		} while (input.nextInt() != PointNumber.EXIT);
+		System.out.println(PointNumber.END_THANKS);
+
 		input.close();
 	}
 

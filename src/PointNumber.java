@@ -1,11 +1,11 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class GuessLetter {
+public class PointNumber {
 
 	public static final int EXIT = 0;
 	public static final String END_THANKS = "Dziêkujê za grê :) Dozobaczenia... ";
-	
+
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
@@ -13,8 +13,9 @@ public class GuessLetter {
 
 		int randNumber;
 		int userNumber;
-		
-		do {randNumber = random.nextInt(10);
+
+		do {
+			randNumber = random.nextInt(10);
 			System.out.println("Wcisnij na klawiaturze liczbê: " + randNumber);
 
 			while ((userNumber = input.nextInt()) != randNumber) {
@@ -26,8 +27,8 @@ public class GuessLetter {
 			System.out.printf("Gratulacje. \n\n");
 			System.out.printf("Koniec wciœnij 0. \nKontynuacja wprowadz 1.");
 
-		} while (input.nextInt() != GuessLetter.EXIT);
-		System.out.println(GuessLetter.END_THANKS);
+		} while (input.nextInt() != PointNumber.EXIT);
+		System.out.println(PointNumber.END_THANKS);
 
 		input.close();
 	}
