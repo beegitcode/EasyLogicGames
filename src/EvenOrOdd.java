@@ -12,29 +12,26 @@ public class EvenOrOdd {
 		int evenOrOddNumber;
 		boolean userAnswer;
 
-		evenOrOddNumber = random.nextInt(100);
+		do {
+			evenOrOddNumber = random.nextInt(100);
 
-		System.out.println("Czy podana liczba jest parzysta? " + evenOrOddNumber);
+			System.out.println("Czy podana liczba jest parzysta? " + evenOrOddNumber);
+				
+			System.out.printf("Prawda znaczy true, fa³sz znaczy false. \ntrue czy false???\n");
 
-		System.out.println("ODP" + ((evenOrOddNumber % 2) == 0));
+			userAnswer = input.nextBoolean();
 
-		userAnswer = input.nextBoolean();
+			if (userAnswer == ((evenOrOddNumber % 2) == 0)) {
+				System.out.println("Brawo!!!\n");
 
-		if (userAnswer == ((evenOrOddNumber % 2) == 0)) {
-			System.out.println("Brawo");
-
-		} else {
-			System.out.println("Buu");
-		}
-
-//				System.out.println("Rozwi¹zanie: ");
-//				if ((evenOrOddNumber % 2) == 0) {
-//					System.out.println("Podana liczba jest parzysta");
-//		
-//				} else {
-//					System.out.println("Podana liczba jest nieparzysta");
-//				}
-
+			} else {
+				System.out.println("Niestety :( odpowiedz niepoprawna.");
+			}
+			System.out.printf("Koniec wciœnij 0. \nKontynuacja wprowadz 1.\n");
+			
+		} while (input.nextInt() != GuessLetter.EXIT);
+		System.out.println(GuessLetter.END_THANKS);
+		
 		input.close();
 	}
 

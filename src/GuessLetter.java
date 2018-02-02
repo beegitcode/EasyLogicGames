@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class GuessLetter {
 
 	public static final int EXIT = 0;
-
+	public static final String END_THANKS = "Dziêkujê za grê :) Dozobaczenia... ";
+	
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
@@ -26,7 +27,7 @@ public class GuessLetter {
 			System.out.printf("Koniec wciœnij 0. \nKontynuacja wprowadz 1.");
 
 		} while (input.nextInt() != GuessLetter.EXIT);
-		System.out.println("Bye bye");
+		System.out.println(GuessLetter.END_THANKS);
 
 		input.close();
 	}
