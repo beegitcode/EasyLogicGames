@@ -1,3 +1,4 @@
+package Games;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,7 +13,7 @@ public class PointLetter {
 
 		// System.out.println(Character.toString(randLetter));
 
-		// System.out.println(fullalphabet);// out
+		// System.out.println(fullalphabet);
 		// System.out.println(randLetter);
 
 		for (int i = 0; i < 5; i++) {

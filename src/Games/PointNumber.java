@@ -1,3 +1,4 @@
+package Games;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -6,8 +7,8 @@ public class PointNumber {
 	public static final int EXIT = 0;
 	public static final String END_THANKS = "Dziêkujê za grê :) Dozobaczenia... ";
 
-	public static void main(String[] args) {
-
+	//public static void main(String[] args) {
+public static void Pointn() {
 		Scanner input = new Scanner(System.in);
 		Random random = new Random();
 
@@ -30,7 +31,7 @@ public class PointNumber {
 		} while (input.nextInt() != PointNumber.EXIT);
 		System.out.println(PointNumber.END_THANKS);
 
-		input.close();
-	}
+		input.close();}
+	//}
 
 }
