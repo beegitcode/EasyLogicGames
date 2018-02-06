@@ -1,10 +1,11 @@
 package Games;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class EvenOrOdd {
 
-	public static void main(String[] args) {
+	public static void everOrOddStart() {
 
 		Scanner input = new Scanner(System.in);
 		Random random = new Random();
@@ -29,8 +30,7 @@ public class EvenOrOdd {
 			}
 			System.out.printf("Koniec wciœnij 0. \nKontynuacja wprowadz 1.\n");
 
-		} while (input.nextInt() != PointNumber.EXIT);
-		System.out.println(PointNumber.END_THANKS);
+		} while (input.nextInt() != 0);
 
 		input.close();
 	}

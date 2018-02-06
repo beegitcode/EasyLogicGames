@@ -1,20 +1,16 @@
 package Games;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class PointLetter {
 
-	public static void main(String[] args) {
+	public static void pointLetterStart() {
 
 		String alphabet = "A•BC∆DE FGHIJKL£MN—O”PQRSåTUVWXYZØè";
 		String fullalphabet = alphabet + alphabet.toLowerCase();
 		Random random = new Random();
 		Scanner input = new Scanner(System.in);
-
-		// System.out.println(Character.toString(randLetter));
-
-		// System.out.println(fullalphabet);
-		// System.out.println(randLetter);
 
 		for (int i = 0; i < 5; i++) {
 
@@ -30,8 +26,6 @@ public class PointLetter {
 			}
 			System.out.println("Gratulacje. ");
 		}
-
-		System.out.println(PointNumber.END_THANKS);
 
 		input.close();
 

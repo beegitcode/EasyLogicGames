@@ -1,10 +1,11 @@
 package Games;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class GuessNumber {
 
-	public static void main(String[] args) {
+	public static void guesNumberStart() {
 
 		Scanner input = new Scanner(System.in);
 		Random random = new Random();
@@ -27,7 +28,6 @@ public class GuessNumber {
 		}
 
 		System.out.println("Gratulacje uda³o siê...");
-		System.out.println(PointNumber.END_THANKS);
 
 		input.close();
 	}
