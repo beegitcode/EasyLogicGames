@@ -10,22 +10,18 @@ import Games.PointNumber;
 
 public class App {
 
-	public static final int EVEN_OR_ODD = 0;
-	public static final int POINT_NUMBER = 1;
-	public static final int POINT_LETTER = 2;
-	public static final int GUESS_NUMBER = 3;
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Wybierz grê: ");
-		System.out.println("0 - Parzysta nieparzysta.");
-		System.out.println("1 - Wska¿ liczbê.");
-		System.out.println("2 - Wska¿ literê.");
-		System.out.println("3 - Odgadnij liczbê.");
+		for (Options options : Options.values()) {
+			System.out.println(options);
+		}
 
-		int option = sc.nextInt();
+		Options option = Options.createFromInt(sc.nextInt());
 
 		switch (option) {
+		case EXIT:
+			break;
 		case EVEN_OR_ODD:
 			EvenOrOdd.everOrOddStart();
 			break;
@@ -38,8 +34,8 @@ public class App {
 		case GUESS_NUMBER:
 			GuessNumber.guesNumberStart();
 			break;
-		default:
-			System.out.println("Podano b³êdn¹ wartoœæ");
+//		default:
+//			System.out.println("Podano b³êdn¹ wartoœæ");// Ju¿ siê nigdy nie wykona.
 		}
 
 		sc.close();

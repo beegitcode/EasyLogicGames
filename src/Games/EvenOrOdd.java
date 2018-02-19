@@ -15,13 +15,14 @@ public class EvenOrOdd {
 
 		do {
 			evenOrOddNumber = random.nextInt(100);
+		
 
 			System.out.println("Czy podana liczba jest parzysta? " + evenOrOddNumber);
 
 			System.out.printf("Prawda znaczy true, fa³sz znaczy false. \ntrue czy false???\n");
 
 			userAnswer = input.nextBoolean();
-
+			
 			if (userAnswer == ((evenOrOddNumber % 2) == 0)) {
 				System.out.println("Brawo!!!\n");
 
