@@ -26,10 +26,23 @@ public enum Options {
 
 	}
 
+	public static void printAllOptions() {
+		for (Options options : Options.values()) {
+			System.out.println(options);
+		}
+	}
+
 	@Override
 	public String toString() {
 
 		return value + " -> " + description;
+	}
+
+	public void printOptions() {
+		System.out.println("Wybierz grê: ");
+		for (Options options : Options.values()) {
+			System.out.println(options);
+		}
 	}
 
 }
